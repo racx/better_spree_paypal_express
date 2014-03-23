@@ -1,6 +1,7 @@
 class CreateSpreePaypalExpressCheckouts < ActiveRecord::Migration
   def change
     create_table :spree_paypal_express_checkouts do |t|
+      t.integer :tenant_id
       t.string :token
       t.string :payer_id
     end
